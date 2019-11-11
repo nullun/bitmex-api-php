@@ -1,14 +1,14 @@
 <?php
 
 /*
- * BitMex PHP REST API
+ * BitMEX PHP REST API
  *
  * @author y0un1verse
  * @version 0.1
  * @link https://github.com/y0un1verse/bitmex-api-php
  */
 
-class BitMex {
+class BitMEX {
 
   //const API_URL = 'https://testnet.bitmex.com';
   const API_URL = 'https://www.bitmex.com';
@@ -745,7 +745,7 @@ class BitMex {
 
     $this->errorCode = $return['error']['name'];
     $this->errorMessage = $return['error']['message'];
-    if($this->printErrors) echo "BitMex error ({$return['error']['name']}) : {$return['error']['message']}\n";
+    if($this->printErrors) echo "BitMEX error ({$return['error']['name']}) : {$return['error']['message']}\n";
 
     return true;
   }
